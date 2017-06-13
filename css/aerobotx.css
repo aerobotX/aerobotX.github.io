@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300);
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  /* See https://stackoverflow.com/q/19982651 */
+  line-height: 1.5;
+  margin-top: 66px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.highlighted-box {
+  background-color: #ffe8d3;
+}
+
+.navbar-brand {
+  height: 65px;
+}
+
+.navbar-toggle {
+  margin-top: 15px;
+}
+
+ul.nav {
+  padding-top: 13px;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+#oblix-jumbotron {
+  background: url('../assets/oblix.jpg') no-repeat center center transparent;
+  background-size: 100%;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.media {
+  margin-bottom: 15px;
+}
+
+.media-left {
+  padding-right: 15px;
+}
+
+.media-body > p:last-child {
+  margin-bottom: 0;
+}
+
+.ct-label {
+  color: unset;
+  font-size: unset;
+  line-height: unset;
+}
+
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-end {
+  display: inline-block;
+  text-align: center;
+}
+
+#table-specs > tbody > tr > th {
+  white-space: nowrap;
+}
+
+.table {
+  background-color: #ffe8d3;
+}
+
+.table-right-headers > tbody > tr > th {
+  text-align: right;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #fff5ec;
+}
+
+.borderless > tbody > tr > th,
+.borderless > tbody > tr > td {
+  border: 0;
+}
+
+#oblix-font {
+  color: white;
+  bottom: 10px;
+  position: absolute;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.navbar {
+  -webkit-box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.25);
+     -moz-box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.25);
+          box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.25);
+}
+
+#feature-box:before {
+  display: table;
+  content: " ";
+}
+
+#feature-box {
+  padding-bottom: 15px;
+}
+
+.profile-picture {
+  border: 3px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.ct-series-b .ct-bar {
+  stroke: #f05b4f;
+}
+
+.ct-series-a .ct-bar {
+  stroke: #f4c63d;
+}
+
+.engineering {
+  width: 100%;
+  max-width: 384px;
+}
+
+.linkedin {
+  background: url("../assets/linkedin-2c-14px.png") no-repeat;
+  display: inline-block;
+  height: 14px;
+  width: 56px;
+  position: relative;
+}
+
+.spinner {
+  margin-right: 5px;
+  border: 1px solid #f3f3f3; /* Light grey */
+  border-top: 1px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 2s linear infinite;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media(max-width: 767px) {
+  #oblix-jumbotron {
+    height: 300px;
+  }
+
+  .section {
+    margin-top: 25px;
+    /*margin-bottom: 10px;*/
+  }
+}
+
+@media(max-width: 464px) {
+  #oblix-jumbotron {
+    height: 233px;
+  }
+}
+
+@media(max-width: 360px) {
+  #oblix-jumbotron {
+    min-width: 300px;
+    height: 194px;
+  }
+}
+
+@media (min-width: 768px) {
+  #feature-box {
+    top: -20px;
+    margin-top: -5em;
+    -webkit-box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.25);
+       -moz-box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.25);
+            box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.25);
+  }
+
+  #oblix-jumbotron {
+    height: 500px;
+  }
+
+  .jumbotron .h1, .jumbotron h1 {
+    font-size: 48px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .profile-picture {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+@media (min-width: 992px) {
+  .jumbotron .h1, .jumbotron h1 {
+    font-size: 63px;
+  }
+}
+
+/* If height is less than 480, don't use floating navbar. */
+@media (max-height: 480px) {
+  body {
+    margin-top: 0;
+  }
+
+  .navbar {
+    margin-bottom: 0;
+  }
+
+  .navbar-fixed-top {
+    position: relative;
+  }
+}
+
+/* Ensure that anchors have a position that is in the visible area (and not behind the navbar). */
+@media (min-height: 481px) {
+  h1[id], h2[id], h3[id] {
+    /* h1, h2, h3 normally have style "margin-top: 20" */
+    padding-top: 86px;
+    margin-top: -66px;
+  }
+}

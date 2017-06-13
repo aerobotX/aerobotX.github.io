@@ -1,0 +1,492 @@
+---
+layout: default
+title: "aerobotX"
+---
+
+<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand active" href="{{ '/' | prepend: site.baseurl }}"><img alt="aerobotX" src="assets/aerobotx.svg" height="100%" /></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#specs">Specs</a></li>
+        <li><a href="#engineering">Engineering</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="oblix-jumbotron" class="jumbotron">
+  <div class="container">
+    <h1 id="oblix-font" class="align-bottom">ObliX</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-sm-7">
+      <h2>“Never-Landing” Airship</h2>
+      <p>
+        ObliX is an unmanned airship designed from the ground up for safety, endurance, and maneuverability. Its unique combination of features make it particularly well-suited for safety-critical long-range missions:
+      </p>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object" src="assets/icons/electric-tower-dark.svg" height="64" width="64" alt="Inspections">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Inspections.</h4>
+          <p>
+            Pipelines, power transmission, railways, vegetation management, etc.
+          </p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object" src="assets/icons/sprout-light.svg" height="64" width="64" alt="Precision Agriculture">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Precision Agriculture.</h4>
+          <p>
+            Remote sensing, yield prediction, etc.
+          </p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object" src="assets/icons/stadium.svg" height="64" width="64" alt="Entertainment">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Entertainment.</h4>
+          <p>
+            Video streaming, crowd monitoring, etc.
+          </p>
+        </div>
+      </div>
+      <p>
+        Plus many more, including construction site monitoring, first-responder support, anti-poaching surveillance, research, deliveries, etc.
+      </p>
+    </div><!--
+    no whitespace
+    --><div id="feature-box" class="col-lg-4 col-sm-5 highlighted-box section">
+      <h2 id="features">Key Features</h2>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object" src="assets/icons/airbag.svg" height="64" width="64" alt="Safety">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Safety.</h4>
+          <p>
+            Even in the unlikely event of a severe failure, the airship would not crash but slowly sink, making it safe to operate over people.
+          </p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object" src="assets/icons/sand-clock.svg" height="64" width="64" alt="Endurance">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Endurance.</h4>
+          <p>
+            Equipped with solar panels, ObliX can stay airborne for up to 8 hours and cover up to 100 miles.
+          </p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object" src="assets/icons/maneuverability.svg" height="64" width="64" alt="Maneuverability">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Maneuverability.</h4>
+          <p>
+            ObliX’s novel engine layout and sophisticated flight control allow movement in all directions. Excellent flight stability guaranteed.
+          </p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object" src="assets/icons/woman.svg" height="64" width="64" alt="World-Class Service">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">World-Class Service.</h4>
+          <p>
+            We are here to help you and are happy to integrate ObliX into your data-analysis workflows.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 id="specs">Technical Specification</h2>
+      <table id="table-specs" class="table borderless table-striped table-right-headers">
+        <tr><th>Flight Time</th><td>8 h</td></tr>
+        <tr><th>Range</th><td>100 mi (161 km) against 3.5 mph (6 km/h) wind</td></tr>
+        <tr><th>Payload</th><td>3.3 lb (1.5 kg), sufficient for sensors like HD video, multi- spectral imaging, LiDAR, etc.</td></tr>
+        <tr><th>Power Source</th><td>battery / solar panels</td></tr>
+        <tr><th>Length</th><td>26′3″ (8 m)</td></tr>
+        <tr><th>Diameter</th><td>6′7″ (2 m)</td></tr>
+        <tr><th>Lifting Gas</th><td>565 cu ft (16 m<sup>3</sup>) Helium, non-inflammable</td></tr>
+        <tr><th>Rotors</th><td>9</td></tr>
+        <tr><th>Rotor Diameter</th><td>1 × 22″ (550 mm) stern, 8 × 3.5″ (89 mm) ducted fans</td></tr>
+        <tr><th>Maximum Wind</th><td>16 mph (26 km/h)</td></tr>
+      </table>
+    </div>
+    <div class="col-md-6 section">
+      <h2>Comparison</h2>
+      <div class="text-center">
+        <img src="assets/oblix_side.png" width="128" alt="ObliX"/> vs. <img src="assets/octocopter.png" width="128" alt="Octocopter"/>
+      </div>
+      <div class="ct-chart ct-perfect-fifth"></div>
+      <p>
+        Note: Safety above is measured as the inverse of impact energy at a vertical crash from 100 m.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid highlighted-box">
+  <div class="container">
+    <h2 id="engineering">State-of-the-Art Engineering</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="center-block engineering" src="assets/simulation.jpg" alt="Simulation">
+              <div class="carousel-caption">
+                Physics Simulation
+              </div>
+            </div>
+            <div class="item">
+              <img class="center-block engineering" src="assets/analysis.jpg" alt="CFD">
+              <div class="carousel-caption">
+                Structural Analysis and CFD
+              </div>
+            </div>
+            <div class="item">
+              <img class="center-block engineering" src="assets/housing.png" alt="CFD">
+              <div class="carousel-caption">
+                CAD
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <h4>Simulation.</h4>
+        <p>
+          Every component of ObliX has been designed and optimized using computer-aided design (CAD), computational fluid dynamics (CFD), and physics simulation.
+        </p>
+      </div><hr class="visible-xs-block" /><!--
+      no whitespace
+      --><div class="col-sm-4 section">
+        <img class="center-block engineering" src="assets/oblix_mini.jpg" />
+        <h4>Prototyping.</h4>
+        <p>
+          ObliX mini is a small-scale prototype of length 6'5" (1.95 m) that we have used to test our design, manufacturing process, and software.
+        </p>
+      </div><hr class="visible-xs-block" /><!--
+      no whitespace
+      --><div class="col-sm-4 section">
+        <img class="center-block engineering" src="assets/slam.jpg" />
+        <h4>Self-Flying.</h4>
+        <p>
+          ObliX can autonomously navigate its environment, thus greatly reducing the workload for the pilot. Within regulatory boundaries, it can fly by itself!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 id="team">Team</h2>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object profile-picture" src="assets/team/daniel.png" height="128" width="128" alt="Daniel Wibbing">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Daniel Wibbing, Ph.D.<br/><small class="text-nowrap">Co-Founder</small></h4>
+          <a class="linkedin" href="https://www.linkedin.com/in/daniel-wibbing-21986722"></a>
+        </div>
+      </div>
+    </div><!--
+    no whitespace
+    --><div class="col-sm-6">
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object profile-picture" src="assets/team/florian.png" height="128" width="128" alt="Florian Schoppmann">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Florian Schoppmann, Ph.D.<br/><small class="text-nowrap">Co-Founder</small></h4>
+          <a class="linkedin" href="https://www.linkedin.com/in/fschopp"></a>
+        </div>
+      </div>
+    </div><div class="clearfix"></div><!--
+    no whitespace
+    --><div class="col-sm-6">
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object profile-picture" src="assets/team/michael.png" height="128" width="128" alt="Michael Hofmann">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Michael Hofmann<br/><small class="text-nowrap">Computer Vision</small></h4>
+          <a class="linkedin" href="https://www.linkedin.com/in/michaelhofmann90"></a>
+        </div>
+      </div>
+    </div><!--
+    no whitespace
+    --><div class="col-sm-6">
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object profile-picture" src="assets/team/kent.png" height="128" width="128" alt="Kent Sommer">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Kent Sommer<br/><small class="text-nowrap">Machine Learning</small></h4>
+          <a class="linkedin" href="https://www.linkedin.com/in/kentsommer"></a>
+        </div>
+      </div>
+    </div><div class="clearfix"></div><!--
+    no whitespace
+    --><div class="col-sm-6">
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object profile-picture" src="assets/team/kevin.png" height="128" width="128" alt="Kevin Keuerleber">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Kevin Keuerleber<br/><small class="text-nowrap">Business Development</small></h4>
+          <a class="linkedin" href="https://www.linkedin.com/in/kevin-keuerleber-b9632b109"></a>
+        </div>
+      </div>
+    </div><!--
+    no whitespace
+    --><div class="col-sm-6">
+      <div class="media">
+        <div class="media-left media-middle">
+          <img class="media-object profile-picture" src="assets/team/martin.png" height="128" width="128" alt="Martin Zobel">
+        </div>
+        <div class="media-body media-middle">
+          <h4 class="media-heading">Martin Zobel<br/><small class="text-nowrap">Aerospace Engineering</small></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <hr/>
+  <h2 id="contact">Contact</h2>
+  <p>
+    Please email directly to <a href="mailto:info@aerobotx.net">info@aerobotx.net</a> or use the contact form below.
+  </p>
+  <form id="contact-form" data-toggle="validator" role="form">
+    <fieldset id="contact-form-fieldset">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="contact-name" class="control-label">Name</label>
+            <div class="input-group">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+              <input type="text" class="form-control" id="contact-name" name="name" placeholder="First Last" data-error="Please enter your name." required="required"/>
+            </div>
+            <div class="help-block with-errors"></div>
+          </div>
+        </div><!--
+        no whitespace
+        --><div class="col-sm-6">
+          <div class="form-group">
+            <label for="contact-email" class="control-label">Email</label>
+            <div class="input-group">
+              <span class="input-group-addon">@</span>
+              <input type="email" class="form-control" id="contact-email" name="email" placeholder="Email" data-error="Please enter your email address." required="required"/>
+            </div>
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="contact-subject">Subject</label>
+        <input type="text" class="form-control" id="contact-subject" name="subject" placeholder="Subject" required="required"/>
+      </div>
+      <div class="form-group">
+        <label for="contact-message">Message</label>
+        <textarea class="form-control textarea" rows="3" id="contact-message" name="message" placeholder="Message"></textarea>
+      </div>
+      <div class="form-group">
+        <div class="g-recaptcha" data-sitekey="6Lc7-iQUAAAAAAxqyqPcMjvesRFLPICG-BWC906C"></div>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p id="send_status" class="help-block hidden">
+          <span id="sending_msg"><span class="spinner"></span>Sending... Please wait, this may take several seconds.</span><!--
+          no whitespace
+          --><span id="successfully_sent_msg">Message sent successfully.</span><!--
+          no whitespace
+          --><span id="failed_to_send_msg">Sending message failed. Please send email instead.</span><!--
+          no whitespace
+          --><span id="failed_to_verify_captcha">This contact form is for humans only. Please check “I am not a robot”.</span>
+        </p>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<script>
+  var data = {
+    labels: ['endurance (h)|endurance', 'range (km × 10)|range', 'degrees of freedom|d.o.f.', 'safety (1/kJ)|safety', 'max. airspeed (m/s)|airspeed'],
+      series: [
+      [8, 16, 4, 20.4, 8.3],
+      [0.4, 0.32, 4, 0.43, 20.1]
+    ]
+  };
+
+  var options = {
+    scaleMinSpace: 30,
+    seriesBarDistance: 10,
+    reverseData: true,
+    horizontalBars: true,
+    axisY: {
+      offset: 120,
+      labelInterpolationFnc: function (value) {
+        return value.split('|')[0];
+      }
+    }
+  };
+
+  var responsiveOptions = [
+    ['screen and (min-width: 641px) and (max-width: 1024px)', {
+      seriesBarDistance: 10
+    }],
+    ['screen and (max-width: 640px)', {
+      axisY: {
+        offset: 80,
+        labelInterpolationFnc: function (value) {
+          return value.split('|')[1];
+        }
+      }
+    }]
+  ];
+
+  var chart = new Chartist.Bar('.ct-chart', data, options, responsiveOptions);
+
+  // Let's put a sequence number aside so we can use it in the event callbacks
+  var seq = 0;
+
+  // Once the chart is fully created we reset the sequence
+  chart.on('created', function() {
+    seq = 0;
+  });
+
+  // On each drawn element by Chartist we use the Chartist.Svg API to trigger SMIL animations
+  chart.on('draw', function(data) {
+    if(data.type === 'label') {
+      // See https://github.com/gionkunz/chartist-js/issues/439.
+      if (data.axis.units.pos === 'x') {
+        data.element.attr({ x: data.x - data.width / 2 });
+      }
+    } else if(data.type === 'bar') {
+      data.element.animate({
+        opacity: {
+          // The delay when we like to start the animation
+          begin: 500,
+          // Duration of the animation
+          dur: 500,
+          // The value where the animation should start
+          from: 0,
+          // The value where it should end
+          to: 1
+        },
+        x2: {
+          begin: 500,
+          // 22.5 is the maximum value in the chart
+          dur: data.value.x / 22.5 * 1000,
+          from: data.x1,
+          to: data.x2
+        }
+      });
+    }
+  });
+
+  var ContactFormState = {
+    INITIAL: 0,
+    SENDING : 1,
+    SUCCESSFULLY_SENT: 2,
+    SEND_FAILED: 3,
+    CAPTCHA_FAILED: 4
+  };
+  var contactFormState = ContactFormState.INITIAL;
+
+  function setContactFormState(newState) {
+    contactFormState = newState;
+    $('#contact-form-fieldset').prop('disabled',
+        contactFormState === ContactFormState.SENDING || contactFormState === ContactFormState.SUCCESSFULLY_SENT);
+    showHide($('#send_status'), contactFormState !== ContactFormState.INITIAL);
+    showHide($('#sending_msg'), contactFormState === ContactFormState.SENDING);
+    showHide($('#successfully_sent_msg'), contactFormState === ContactFormState.SUCCESSFULLY_SENT);
+    showHide($('#failed_to_send_msg'), contactFormState === ContactFormState.SEND_FAILED);
+    showHide($('#failed_to_verify_captcha'), contactFormState === ContactFormState.CAPTCHA_FAILED);
+  }
+
+  function showHide(element, shouldShow) {
+    if (shouldShow) {
+      element.removeClass('hidden');
+    } else {
+      element.addClass('hidden');
+    }
+  }
+
+  var contactForm = $('#contact-form');
+  contactForm.validator().on('submit', function(event) {
+    if (event.isDefaultPrevented()) {
+      return
+    }
+
+    var postData = contactForm.serialize();
+    event.preventDefault();
+    grecaptcha.reset();
+    setContactFormState(ContactFormState.SENDING);
+    $.ajax({
+      type: 'POST',
+      url: 'https://aerobotx-contact-form.herokuapp.com/send',
+      data: postData,
+      dataType: 'json',
+      success: function(response) {
+        setContactFormState(ContactFormState.SUCCESSFULLY_SENT);
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        // HTTP status code 403 means "Forbidden"
+        setContactFormState(jqXHR.status === 403 ? ContactFormState.CAPTCHA_FAILED : ContactFormState.SEND_FAILED);
+      }
+    });
+  });
+</script>
