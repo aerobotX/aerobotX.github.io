@@ -9,9 +9,8 @@
 title: aerobotX Inc.
 email: info@aerobotx.net
 description: > # this means to ignore newlines until "baseurl:"
-  aerobotX ObliX is an unmanned airship designed from the ground up for safety,
-  endurance, and maneuverability. Its unique combination of features make it
-  particularly well-suited for safety-critical long-range missions.
+  AerobotX makes unmanned airship drones designed from the ground up for
+  daylong missions, precise maneuverability, and safe operation over people.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aerobotx.net" # the base hostname & protocol for your site
 exclude:
